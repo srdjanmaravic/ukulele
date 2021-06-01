@@ -67,22 +67,36 @@ h6 {
 .container {
   width: 80%;
   margin: auto;
+  @media (max-width: 767px) {
+    width: 90%;
+  }
 }
 // Header
 header {
   background-image: linear-gradient(rgba($black, 0.5), rgba($black, 0.5)),
     url(../img/header.jpg);
   height: 100vh;
+  text-align: center;
   @include pozadinskeSlike();
+  @media (max-width: 767px) {
+    height: 70vh;
+  }
   p {
     font-size: 2rem;
     font-weight: 300;
+    @media (max-width: 767px) {
+      font-size: 1.2rem;
+    }
     &::after {
       @extend .underline;
     }
   }
   h1 {
     font-size: 7rem;
+    @media (max-width: 767px) {
+      font-size: 5rem;
+      line-height: 1;
+    }
   }
 }
 // Uvod
@@ -93,6 +107,10 @@ header {
   padding: $padding;
   article {
     flex: 0 0 48%;
+    @media (max-width: 767px) {
+      flex: 0 0 100%;
+      margin-bottom: 30px;
+    }
     img {
       width: 100%;
       display: block;
@@ -126,14 +144,24 @@ header {
     url(../img/cta.jpg);
   height: 60vh;
   @include pozadinskeSlike();
+  text-align: center;
+  @media (max-width: 767px) {
+    padding: 20px;
+  }
   p {
     font-size: 1.5rem;
+    @media (max-width: 767px) {
+      font-size: 1.2rem;
+    }
     &::after {
       @extend .underline;
     }
   }
   h2 {
     font-size: 6rem;
+    @media (max-width: 767px) {
+      font-size: 4rem;
+    }
   }
   button {
     @include btn();
@@ -148,6 +176,9 @@ header {
   @extend.container;
   article {
     flex: 0 0 48%;
+    @media (max-width: 767px) {
+      flex: 0 0 100%;
+    }
     margin-bottom: 45px;
     img {
       width: 100%;

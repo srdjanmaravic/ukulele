@@ -36,10 +36,17 @@ h6 {
   margin: auto;
 }
 
+@media (max-width: 767px) {
+  .container, .galerija {
+    width: 90%;
+  }
+}
+
 header {
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url(../img/header.jpg);
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/header.jpg);
   height: 100vh;
+  text-align: center;
   background-position: center;
   background-size: cover;
   display: -webkit-box;
@@ -58,13 +65,32 @@ header {
   color: #fff;
 }
 
+@media (max-width: 767px) {
+  header {
+    height: 70vh;
+  }
+}
+
 header p {
   font-size: 2rem;
   font-weight: 300;
 }
 
+@media (max-width: 767px) {
+  header p {
+    font-size: 1.2rem;
+  }
+}
+
 header h1 {
   font-size: 7rem;
+}
+
+@media (max-width: 767px) {
+  header h1 {
+    font-size: 5rem;
+    line-height: 1;
+  }
 }
 
 .uvod {
@@ -83,6 +109,15 @@ header h1 {
   -webkit-box-flex: 0;
       -ms-flex: 0 0 48%;
           flex: 0 0 48%;
+}
+
+@media (max-width: 767px) {
+  .uvod article {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 100%;
+            flex: 0 0 100%;
+    margin-bottom: 30px;
+  }
 }
 
 .uvod article img {
@@ -146,14 +181,33 @@ header h1 {
       -ms-flex-direction: column;
           flex-direction: column;
   color: #fff;
+  text-align: center;
+}
+
+@media (max-width: 767px) {
+  .cta {
+    padding: 20px;
+  }
 }
 
 .cta p {
   font-size: 1.5rem;
 }
 
+@media (max-width: 767px) {
+  .cta p {
+    font-size: 1.2rem;
+  }
+}
+
 .cta h2 {
   font-size: 6rem;
+}
+
+@media (max-width: 767px) {
+  .cta h2 {
+    font-size: 4rem;
+  }
 }
 
 .cta button {
@@ -190,6 +244,14 @@ header h1 {
       -ms-flex: 0 0 48%;
           flex: 0 0 48%;
   margin-bottom: 45px;
+}
+
+@media (max-width: 767px) {
+  .galerija article {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 100%;
+            flex: 0 0 100%;
+  }
 }
 
 .galerija article img {
